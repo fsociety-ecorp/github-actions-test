@@ -32,6 +32,7 @@ jobs:
       - name: Run tests
         run: |
           chmod +x ./script.sh
+        shell: bash
 
   deploy:
     runs-on: ubuntu-latest
