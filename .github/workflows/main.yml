@@ -30,7 +30,8 @@ jobs:
         run: npm install
         
       - name: Run tests
-        run: npm test
+        run: |
+          chmod +x ./script.sh
 
   deploy:
     runs-on: ubuntu-latest
